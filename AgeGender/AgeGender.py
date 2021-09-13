@@ -108,8 +108,8 @@ while cv.waitKey(1) < 0:
 
         label = "{},{}".format(gender, age)
         cv.putText(frameFace, label, (bbox[0], bbox[1]-10), cv.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255), 2, cv.LINE_AA)
-        cv.imshow("Age Gender Demo", frameFace)
-        # cv.imwrite("age-gender-out-{}".format(args.input),frameFace)
+        # cv.imshow("Age Gender Demo", frameFace)
+        cv.imwrite("age-gender-out-{}".format(args.input),frameFace)
     print("time : {:.3f}".format(time.time() - t))
 
 
